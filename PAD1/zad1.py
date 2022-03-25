@@ -83,6 +83,4 @@ if __name__ == '__main__':
     print(cat3.genus)
     print(cat3.purr())
 
-# zadanie 2
-
 

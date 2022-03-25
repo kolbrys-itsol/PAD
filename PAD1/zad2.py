@@ -1,3 +1,4 @@
+# zadanie 2
 class Worker:
     def __init__(self, number, name, age, salary):
         self.number = number
