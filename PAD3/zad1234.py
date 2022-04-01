@@ -14,8 +14,11 @@ print(file.head(20))
 
 # zad 3
 print('===zad3===')
-print(file.groupby('gender').agg({'owned_goods': 'mean'}).round(2))
+print(file.groupby('gender').agg({'owned_goods': 'mean'}).round(2).reset_index())
 
 # zad 4
 print('===zad4===')
-print(file.groupby('Country').agg({'owned_goods': 'mean', 'Age': 'min'}).round(2))
+new_frame = file.groupby('Country').agg({'owned_goods': 'mean', 'Age': 'min'}).round(2).reset_index()
+print(type(new_frame))
+print('===')
+print(new_frame)
