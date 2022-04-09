@@ -1,7 +1,5 @@
 import numpy as np
 
-
-
 if __name__ == '__main__':
     # zad 1
     matrix = np.genfromtxt('Zadanie_1.csv', delimiter=';', skip_header=True)
@@ -44,4 +42,3 @@ if __name__ == '__main__':
     A = np.sqrt(np.sum(matrixA ** 2, axis=1))[:, np.newaxis]
     B = np.sqrt(np.sum(matrixB ** 2, axis=1))[np.newaxis, :]
     print(numerator / (A * B))
-
