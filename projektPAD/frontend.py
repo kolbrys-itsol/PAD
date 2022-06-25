@@ -70,8 +70,6 @@ else:
         elif graph == 'Ocena a długość':
             df2 = dataframe
             print(df2.Rating.groupby(by=[df2.Length]).agg('mean').reset_index(name='Mean'))
-            # fig = plot.bar(df2.Rating.groupby(by=[df2.Length]).agg('mean').reset_index(name='Mean'), x='Length',
-            #                y='Mean')
             fig = plot.bar(df2.Rating.groupby(by=[df2.Length]).agg('mean').reset_index(name='Mean'), x='Length',
                             y='Mean')
             fig.update_xaxes(categoryorder='array',
